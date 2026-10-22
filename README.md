@@ -15,7 +15,7 @@ My grandfather is 90 and still fills his own pillbox every week. Medication labe
 - **Fill Compartments:** select a medication to see exactly where it goes and how many.
 - **See Compartments:** select a day to see a photo of every pill that belongs in each compartment.
 - **The capture disc I designed**
-![Capture disc](disc.jpg)
+![Capture disc](disc.jpeg)
 
 ## How it's built
 | Tool | Language | What it does |
