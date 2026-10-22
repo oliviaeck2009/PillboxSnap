@@ -46,6 +46,10 @@ Each of the 14 compartment buttons uses the same pattern, shown here for Sunday 
 - `worker.js`: the Cloudflare Worker that sends label photos to Claude and returns structured fields
 - `pill-crop-worker.js`: the Cloudflare Worker that crops the center of each pill photo, where the disc positions the pill
 - `*.png`: screenshots of key App Inventor blocks
+- `PillboxSnap_Public.aia`: the full App Inventor project (app token removed). It still includes a few early test components that are no longer used.
+- `worker.js`: the Cloudflare Worker that sends label photos to Claude and returns structured fields
+- `pill-crop-worker.js`: the Cloudflare Worker that crops the center of each pill photo, where the disc positions the pill
+- `*.png`: screenshots of key App Inventor blocks
 
 ## Security
 The Claude API key and app token are stored as Cloudflare secrets, not in the code. The label Worker also has a daily usage limit.
