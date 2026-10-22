@@ -57,6 +57,11 @@ The Claude API key and app token are stored as Cloudflare secrets, not in the co
 ## Demo data
 The demo uses fictional prescription labels. Flumoride is a made-up medication. PillboxSnap is a visual guide, not medical advice.
 
+## Known issues
+- **Capitalization of one demo name:** Screen1 and MedicationDetailScreen include a one-time block that corrects the capitalization of one demo medication name (AMOXICILLIN → Amoxicillin). The label reader returns names exactly as printed, and some labels print names in all caps. Updating the prompt to normalize capitalization is a planned fix.
+- **Four medications per compartment:** In See Compartments, each AM or PM compartment shows up to four medications, because the screen uses a fixed set of rows. A list that grows with the data would remove this limit.
+- **Scan Label in the public project:** The app token is removed from `PillboxSnap_public.aia`, so Scan Label won't connect to the Worker if the project is run as is.
+
 ## AI use
 I used AI tools (ChatGPT and Claude) as helpers during development. My full AI disclosure, including what I designed, coded, changed, and tested myself, is in my Congressional App Challenge submission.
 
